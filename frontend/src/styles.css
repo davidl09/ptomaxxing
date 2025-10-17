@@ -1,0 +1,120 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 1.5rem;
+  background: #f6f7fb;
+  color: #12263a;
+}
+
+.planner-page {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.planner-form .form-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.planner-form fieldset {
+  border: 1px solid #ccd5e0;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.plan-summary-bar ul {
+  display: flex;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+}
+
+.plan-summary-bar button {
+  border: 1px solid #ccd5e0;
+  background: white;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.plan-summary-bar button.active {
+  border-color: #0056d6;
+  box-shadow: 0 0 0 2px rgba(0, 86, 214, 0.2);
+}
+
+.blocks-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.block-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 8px 18px rgba(15, 30, 45, 0.08);
+}
+
+.block-card footer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.block-card button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: #0056d6;
+  color: white;
+  cursor: pointer;
+}
+
+.block-card button:nth-of-type(2) {
+  background: #0f1e2d;
+}
+
+.mini-month-strip {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.mini-month-strip .day {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  background: #e4ebf5;
+}
+
+.mini-month-strip .day.pto {
+  background: #ff9f1c;
+  color: white;
+}
+
+.mini-month-strip .day.weekend {
+  background: #6c8cff;
+  color: white;
+}
+
+.mini-month-strip .day.holiday {
+  background: #20bf55;
+  color: white;
+}
+
+.locale-picker {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  border: 1px solid #ccd5e0;
+  padding: 1rem;
+  border-radius: 8px;
+  background: white;
+}
